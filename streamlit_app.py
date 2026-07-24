@@ -1,6 +1,7 @@
 # Import python packages
 import streamlit as st
 import os
+import requests
 # Write directly to the app
 st.title(f":cup_with_straw: Customize your smoothie :cup_with_straw: {st.__version__}")
 st.write(
@@ -55,10 +56,10 @@ if ingrediants_list:
 
 import requests
 
-smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
+#smoothiefroot_response = requests.get("https://my.smoothiefroot.com/api/fruit/watermelon")
 
 #st.text(smoothiefroot_response.json())
 
-sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
+#sf_df = st.dataframe(data=smoothiefroot_response.json(), use_container_width=True)
 
 
